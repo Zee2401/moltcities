@@ -142,7 +142,8 @@ async function fetchBotPages() {
         });
         
         container.innerHTML = pageCards.join('');
-    } catch (error) {
+    } catch (
+        error) {
         console.error('Failed to fetch bot pages:', error);
         container.innerHTML = '<p class="page-preview-placeholder">Failed to load bot pages.</p>';
     }
